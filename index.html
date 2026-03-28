@@ -791,43 +791,20 @@
         
         <div class="slider-panel-content">
             <div class="slider-tabs">
-                <div class="slider-tab active" data-tab="trading">Trading System</div>
+                
                 <div class="slider-tab" data-tab="biography">Biography</div>
             </div>
 
-            <!-- Trading System Tab -->
-            <div id="trading" class="tab-content active">
-                <h2>Trading System</h2>
-                <p>My proprietary trading system represents years of research and refinement in algorithmic trading and quantitative analysis.</p>
-                
-                <div class="trading-demo">
-                    <img id="tradingGif" src="images/algotrader.png" alt="Trading System Breakdown" loading="lazy">
-                    <p style="font-size: 0.85rem; color: var(--text-muted); text-align: center;">Live Trading System Demonstration</p>
-                    <img id="runGif" src="images/DJQuant.gif" alt="Algo Trader Running" loading="lazy">
-                </div>
-
-                <div class="architecture-section">
-                    <h3>System Architecture</h3>
-                    <ul>
-                        <li><strong>Data Pipeline:</strong> I stream two websockets from Kraken for information, one socket fetches the orderbooks and the other socket fetches the latest bid/ask prices.</li>
-                        <li><strong>Signal Generation:</strong> I use a dual signal to enter a trade, one from orderbook anomalies statistical significance and the other from a hidden markov model's classification.</li>
-                        <li><strong>Risk Management:</strong> My risk management system runs on a function of price volatility which allows my algorithm to have variable exit conditions.</li>
-                        <li><strong>Execution Engine:</strong> I use Kraken's REST API to execute algorithmic trades. Generally I execute a limit buy order and two limit sell orders in order to minimize fees between trades as opposed to using only market orders.</li>
-                        <li><strong>Infrastructure:</strong> The backend is built fully in C++ and uses LibTorch to analyze the market with autoencoders. The frontend is built with Tkinter in Python to visualize my trades and pnl. My trades are deposited to an SQL database using Sqlite3 via C++.</li>
-                    </ul>
-                </div>
-            </div>
-
             <!-- Biography Tab -->
-            <div id="biography" class="tab-content">
+            <div id="biography" class="tab-content active">
                 <h2>My Bio</h2>
-                <p>I am Mohammed Sharieff, a passionate programmer with a deep interest in algorithmic trading and machine learning. With over 10 years of coding experience, I have developed a robust skillset spanning multiple domains.</p>
+                <p>I am Mohammed Sharieff, a passionate programmer with a deep interest in machine learning. With over 10 years of coding experience, I have developed a robust skillset spanning multiple domains in areas such as REST/Socket APIs.</p>
                 
-                <p>My journey in finance began with a fascination for markets and mathematical modeling in 2015. I have spent countless hours developing and refining trading systems, and applying cutting-edge machine learning techniques to capture financial discrepencies.</p>
+                <p>My journey in machine learning began when I programmed my first Neural Network in C++ in the summer of 2016. Since then, I have spent countless hours developing and refining datasets to generate predictions off of, and applying cutting-edge machine learning techniques to capture predictions in most industries.</p>
                 
-                <p>Beyond trading, I'm committed to education and knowledge sharing. I run two YouTube channels dedicated to quantitative finance and machine learning, where I break down complex concepts into digestible content for aspiring traders and engineers. Both channels together span 3500+ subscribers.</p>
+                <p>Beyond machine learning, I'm committed to education and knowledge sharing, and I have a YouTube channel named MoVariance where I post content referring to the mathematics of AI. My channel currently has 150+ subscribers.</p>
                 
-                <p>I am currently based in Falls Church, VA and I am seeking opportunities to leverage my expertise in quantitative finance, algorithmic trading, and machine learning to drive value for organizations at the forefront of financial technology.</p>
+                <p>I am currently based in Falls Church, VA and I am seeking opportunities to leverage my expertise in machine learning to drive value for organizations at the forefront of AI technology.</p>
             </div>
 
             
@@ -845,13 +822,13 @@
                 <img id="profilePhoto" class="profile-photo" src="images/me.JPG" alt="Profile Photo">
             </div>
             <input type="text" class="name-input" placeholder="Mohammed Sharieff" id="nameInput">
-            <p class="tagline">Quantitative Finance • Algorithmic Trading • Machine Learning</p>
+            <p class="tagline">Artificial Intelligence • Machine Learning</p>
         </header>
         
         
         <section class="bio-section">
-            <h2>About Me</h2>
-            <textarea class="bio-textarea" id="bioInput" placeholder="I am a Quantitative Finance Consultant with a wide portfolio of personal and professional projects and I seek to drive value to you using my skillset. I have been coding for over 10 years and I am well versed with integrating Machine Learning and LLM API’s such as PyTorch/Libtorch, Google Gemini and Claude.AI into my own Python and C++ programs. I also develop algorithmic trading software for my own personal use and I have seen a major growth in my trading results as opposed to all of 2025. I also have high communication skills and I am able to break down complex technical jargon to clear and concise explanations of what exactly is going on. I thank you for viewing my website and I am looking forward to working with you."></textarea>
+            <h2>Professional Summary</h2>
+            <textarea class="bio-textarea" id="bioInput" placeholder="I am a recent graduate from George Mason University with a Bachelor of Science in Management Information Sytems. I have a  with a wide portfolio of personal and professional projects and I seek to drive value to you using my skillset. I have been coding for over 10 years and I am well versed with integrating Machine Learning and LLM API’s such as PyTorch/Libtorch, Google Gemini and Claude.AI into my own Python and C++ programs. I am proud of my interpersonal skills and I am able to break down complex technical jargon to clear and concise explanations of what exactly is going on in the systems."></textarea>
         </section>
         
         <section class="contact-section">
@@ -890,43 +867,20 @@
             </div>
         </div>
         
-        <h2 class="section-title">Featured Projects - MoQuant</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <span class="project-number">01</span>
-                <h4>Bitcoin Trading System</h4>
-                <p>Advanced algorithmic trading system for cryptocurrency markets with real-time data processing and execution capabilities.</p>
-                <a href="https://github.com/MoQuant/BitcoinTradingSystem" target="_blank">View Project →</a>
-            </div>
-            
-            <div class="project-card">
-                <span class="project-number">02</span>
-                <h4>C++ 3D Plotting</h4>
-                <p>High-performance 3D visualization library built in C++ for matplotlib-style plotting with enhanced rendering capabilities.</p>
-                <a href="https://github.com/MoQuant/matplotlib-cpp" target="_blank">View Project →</a>
-            </div>
-            
-            <div class="project-card">
-                <span class="project-number">03</span>
-                <h4>Volatility Clustering with KMeans</h4>
-                <p>Machine learning approach to identify and cluster volatility regimes in financial time series data using KMeans algorithm.</p>
-                <a href="https://github.com/MoQuant/VolatilityClustering" target="_blank">View Project →</a>
-            </div>
-        </div>
         
         <h2 class="section-title">Featured Projects - marscolony2040</h2>
         <div class="projects-grid">
             <div class="project-card">
                 <span class="project-number">01</span>
-                <h4>Computer Science Teacher (cs-quest)</h4>
-                <p>Interactive educational platform designed to teach computer science concepts through gamified quests and challenges.</p>
-                <a href="https://github.com/marscolony2040/cs-quest" target="_blank">View Project →</a>
+                <h4>Brain Illness Classification</h4>
+                <p>Attempting to predict brain illnesses by using Convolutional Neural Networks on sample brain scan images. The images were generated from Nano Bannana.</p>
+                <a href="https://github.com/marscolony2040/Brain-Illness-Classification" target="_blank">View Project →</a>
             </div>
             
             <div class="project-card">
                 <span class="project-number">02</span>
-                <h4>Solana Market Maker</h4>
-                <p>Automated market maker bot for the Solana blockchain, providing liquidity and executing trading strategies on DEX platforms.</p>
+                <h4>Bitcoin Manipulation Detector</h4>
+                <p>Utilized AutoEncoder Neural Networks (made in PyTorch) to analyze the level of manipulation on Bitcoin's OrderBook data to get a sense of whether to buy, hold, or sell.</p>
                 <a href="https://github.com/marscolony2040/solona-marketmaker" target="_blank">View Project →</a>
             </div>
             
@@ -938,47 +892,6 @@
             </div>
         </div>
         
-        <h2 class="section-title">Top Videos - MoQuant</h2>
-        <div class="videos-grid">
-            <div class="video-card">
-                <img 
-                    src="images/p1.png" 
-                    alt="Stochastic Covariance Matrix Thumbnail"
-                    class="video-thumbnail"
-                >
-                <div class="video-content">
-                    <h4>Stochastic Covariance Matrix</h4>
-                    <p>Deep dive into modeling time-varying covariance structures in financial markets.</p>
-                    <a href="https://www.youtube.com/watch?v=GjAhJuCKoWE" target="_blank">Watch Video →</a>
-                </div>
-            </div>
-            
-            <div class="video-card">
-                <img 
-                    src="images/p2.png" 
-                    alt="Hedging Portfolios with a Kalman Filter Thumbnail"
-                    class="video-thumbnail"
-                >
-                <div class="video-content">
-                    <h4>Hedging Portfolios with a Kalman Filter</h4>
-                    <p>Advanced techniques for dynamic portfolio hedging using state-space models.</p>
-                    <a href="https://www.youtube.com/watch?v=DXFp_5QVdd4" target="_blank">Watch Video →</a>
-                </div>
-            </div>
-            
-            <div class="video-card">
-                <img 
-                    src="images/p3.png" 
-                    alt="SABR Model Thumbnail"
-                    class="video-thumbnail"
-                >
-                <div class="video-content">
-                    <h4>Implied Volatility Surface with the SABR Model</h4>
-                    <p>Building an Implied Volatility Surface with the SABR Model's closed form solution</p>
-                    <a href="https://www.youtube.com/watch?v=FtvYk54lmFo" target="_blank">Watch Video →</a>
-                </div>
-            </div>
-        </div>
         
         <h2 class="section-title">Top Videos - MoVariance</h2>
         <div class="videos-grid">

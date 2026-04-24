@@ -509,6 +509,17 @@
             font-size: 3rem;
             color: var(--accent-tertiary);
         }
+
+        .cvideo-thumbnail {
+            width: 65%;
+            height: 200px;
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.3), rgba(20, 184, 166, 0.3), rgba(245, 158, 11, 0.2));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: var(--accent-tertiary);
+        }
         
         .video-content {
             padding: 1.5rem;
@@ -791,12 +802,23 @@
         
         <div class="slider-panel-content">
             <div class="slider-tabs">
-                
+                <div class="slider-tab" data-tab="trader">Algo Trader</div>
                 <div class="slider-tab" data-tab="biography">Biography</div>
             </div>
 
+            <div id="trader" class="tab-content active">
+                <h2>iOS Quantitative Trader</h2>
+                <img 
+                    src="images/trader.png" 
+                    alt="SVM Thumbnail"
+                    class="cvideo-thumbnail"
+                >
+                <br/>
+                <p>This algorithmic trading system is built with a C++ backend server and an iOS Swift frontend client. The server connects to several websocket channels and streams live information on prices and level2 orderbooks for all assets and utilizes machine learning and hidden markov models to execute live orders on the exchange. The server is hosted on Google Cloud via Docker and has features to restart automatically if connection drops and maintain trade logic to maximize profitability. The client stays awake and trades as long as the app is open, but if the app is closed trading activity comes to a halt, unless the algorithm is already in a position. In order to minimize fees this whole trading system uses only time based limit orders.</p>
+            </div>
+
             <!-- Biography Tab -->
-            <div id="biography" class="tab-content active">
+            <div id="biography" class="tab-content">
                 <h2>My Bio</h2>
                 <p>I am Mohammed Sharieff, a passionate programmer with a deep interest in machine learning. With over 10 years of coding experience, I have developed a robust skillset spanning multiple domains in areas such as building Neural Networks, Support Vector Machines, and importing REST/Socket APIs.</p>
                 
